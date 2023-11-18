@@ -1,83 +1,12 @@
-// Задача 3. Сортування за кількістю друзів
-// Напиши стрілочну функцію sortByDescendingFriendCount(users) , яка прийматиме один параметр users — масив об'єктів користувачів.
+// Задача 3. Конструктор рядків
+// Напиши клас StringBuilder, який приймає один параметр initialValue — довільний рядок, який записується у приватну властивість value об'єкта, що створюється.
 
-// Функція має повертати масив усіх користувачів, відсортованих за спаданням кількостій їх друзів (властивість friends).
+const builder = new StringBuilder(".");
+console.log(builder.getValue()); // "."
+builder.padStart("^");
+console.log(builder.getValue()); // "^."
+builder.padEnd("^");
+console.log(builder.getValue()); // "^.^"
+builder.padBoth("=");
+console.log(builder.getValue()); // "=^.^="
 
-const sortByDescendingFriendCount = (users) => users.toSorted((moreFriend, lessFriend) => lessFriend.friends.length - moreFriend.friends.length);
-
-console.log(
-  sortByDescendingFriendCount([
-    {
-      name: "Moore Hensley",
-      friends: ["Sharron Pace"],
-      gender: "male"
-    },
-    {
-      name: "Sharlene Bush",
-      friends: ["Briana Decker", "Sharron Pace"],
-      gender: "female"
-    },
-    {
-      name: "Ross Vazquez",
-      friends: ["Marilyn Mcintosh", "Padilla Garrison", "Naomi Buckner"],
-      gender: "male"
-    },
-    {
-      name: "Elma Head",
-      friends: ["Goldie Gentry", "Aisha Tran"],
-      gender: "female"
-    },
-    {
-      name: "Carey Barr",
-      friends: ["Jordan Sampson", "Eddie Strong"],
-      gender: "male"
-    },
-    {
-      name: "Blackburn Dotson",
-      friends: ["Jacklyn Lucas", "Linda Chapman"],
-      gender: "male"
-    },
-    {
-      name: "Sheree Anthony",
-      friends: ["Goldie Gentry", "Briana Decker"],
-      gender: "female"
-    }
-  ])
-);
-// [
-//   {
-//     name: "Ross Vazquez",
-//     friends: ["Marilyn Mcintosh", "Padilla Garrison", "Naomi Buckner"],
-//     gender: "male"
-//   },
-//   {
-//     name: "Sharlene Bush",
-//     friends: ["Briana Decker", "Sharron Pace"],
-//     gender: "female"
-//   },
-//   {
-//     name: "Elma Head",
-//     friends: ["Goldie Gentry", "Aisha Tran"],
-//     gender: "female"
-//   },
-//   {
-//     name: "Carey Barr",
-//     friends: ["Jordan Sampson", "Eddie Strong"],
-//     gender: "male"
-//   },
-//   {
-//     name: "Blackburn Dotson",
-//     friends: ["Jacklyn Lucas", "Linda Chapman"],
-//     gender: "male"
-//   },
-//   {
-//     name: "Sheree Anthony",
-//     friends: ["Goldie Gentry", "Briana Decker"],
-//     gender: "female"
-//   },
-//   {
-//     name: "Moore Hensley",
-//     friends: ["Sharron Pace"],
-//     gender: "male"
-//   }
-// ]
