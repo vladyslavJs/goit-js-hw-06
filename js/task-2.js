@@ -23,8 +23,8 @@ class Storage {
 }
 
 const storage = new Storage(["Nanitoids", "Prolonger", "Antigravitator"]);
-console.log(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator"]
+console.table(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator"]
 storage.addItem("Droid");
-console.log(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator", "Droid"]
+console.table(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator", "Droid"]
 storage.removeItem("Droid");
-console.log(storage.getItems()); // ["Nanitoids", "Antigravitator", "Droid"]
+console.table(storage.getItems()); // ["Nanitoids", "Antigravitator", "Droid"]
