@@ -1,8 +1,7 @@
-# goit-js-hw-5
+# goit-js-hw-6
 
-Home-work #5
-Iteraging methods of the array
+Home-work #6
+OOP. Classes
 
 
-https://vladyslavjs.github.io/goit-js-hw-05/
 
