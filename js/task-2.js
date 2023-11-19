@@ -26,5 +26,5 @@ const storage = new Storage(["Nanitoids", "Prolonger", "Antigravitator"]);
 console.table(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator"]
 storage.addItem("Droid");
 console.table(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator", "Droid"]
-storage.removeItem("Droid");
+storage.removeItem("Prolonger");
 console.table(storage.getItems()); // ["Nanitoids", "Antigravitator", "Droid"]
